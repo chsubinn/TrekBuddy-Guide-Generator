@@ -2,7 +2,7 @@
 
 
 ### 프로젝트 소개
-<a href=https://github.com/Yang-ga-hyeon/TrekBuddy>한국어 텍스트 모델 기반 여행 가이드 어플리케이션 TrekBuddy의 가이드 생성 모델입니다.
+<a href=https://github.com/Yang-ga-hyeon/TrekBuddy>한국어 텍스트 모델 기반 여행 가이드 어플리케이션 TrekBuddy</a>의 가이드 생성 모델입니다.
 
 ## ⏲개발 기간
 * 2023.08.01 ~ 2023.11.10
