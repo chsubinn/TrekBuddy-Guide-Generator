@@ -44,8 +44,8 @@
   - 필요한 라이브러리 install
 
 2) Dataset 준비 & preprocess
-   - (수빈이가 쓰시오)
-   - csv 파일을 tsv 파일로 형식 변환
+  - (수빈이가 쓰시오)
+  - csv 파일을 tsv 파일로 형식 변환
      ```python
        python csvTotsv.py
      ```
@@ -55,7 +55,24 @@
        input_ids = self.tokenizer.encode(instance['passage'])
        label_ids = self.tokenizer.encode(instance['utterance'])      
      ```
-   
+  - train.py에서 Model checkpoint 파라미터 변경
+    ```python
+       checkpoint_callback = ModelCheckpoint(monitor='val_loss',
+                                          dirpath=args.checkpoint,
+                                          filename='model_chp/{epoch:02d}-{val_loss:.3f}',
+                                          verbose=True,
+                                          save_last=False,                                         
+                                          mode='min',
+                                          save_top_k=3, 
+                                          every_n_epochs=25)      
+     ```
+  - train.py에 best accurary model checkpoint 출력하는 부분 추가
+    ```python
+      #print best_checkpoint path
+      best_checkpoint = checkpoint_callback.best_model_path
+      print('\n best checkpoint path:', best_checkpoint)    
+     ```
+   - 학습하기
    ```python
     python train.py --gradient_clip_val 1.0 \
                     --max_epochs 100 \
@@ -65,6 +82,7 @@
                     --batch_size 4 \
                     --num_workers 4
   ```
+
 4) Evaluation
 5) Test
 
