@@ -28,33 +28,22 @@
 ## 설치방법 How to Build
 - Directory 구조
 .
-│
-├──data     //train&test data
-│  ├── train.tsv
-│  └── test.tsv
-├──checkpoint
-│  └──model_chp    //checkpoint
-│      └──epoch=49-val_loss=0.000.ckpt
-│      └──epoch=74-val_loss=0.000.ckpt
-│      └──epoch=99-val_loss=0.000.ckpt
-├──wandb    //코드 실행시 생성
-│  └──run-20230917_132222-kype9vho
-│      └──files
-│      └──logs
-│      └──tmp
-│      └──run-kype9vho.wandb
-│  └──run-20230917_132442-n2sehfxv
-├──.gitignore //SKT KoBART open source
-├──.gitmodules
-├──requirements.txt
-├──LICENSE
-├──dataset.py
-├──download_binary.py
-├──get_model_binary.py
-├──infer.py
-├──model.py
-├──train.py
-└──rouge_metric.py
+└── Edit me to generate/
+    ├── a/
+    │   └── nice/
+    │       └── tree/
+    │           ├── diagram!
+    │           └── :)
+    └── Use indentation/
+        ├── to indicate/
+        │   ├── file
+        │   ├── and
+        │   ├── folder
+        │   └── nesting.
+        └── You can even/
+            └── use/
+                ├── markdown
+                └── bullets!
 
 
 ## 사용방법 How to Test
