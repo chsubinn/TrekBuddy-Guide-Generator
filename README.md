@@ -44,13 +44,17 @@
   - 필요한 라이브러리 install
 
 2) Dataset 준비 & preprocess
-   -(수빈이가 쓰시오)
+   - (수빈이가 쓰시오)
    - csv 파일을 tsv 파일로 형식 변환
      ```python
        python csvTotsv.py
      ```
 4) Train(finetuning)
-  -
+  - dataset.py에서 input_ids와 label_ids를 본인의 데이터셋에 맞게 변경
+    ```python
+       input_ids = self.tokenizer.encode(instance['passage'])
+       label_ids = self.tokenizer.encode(instance['utterance'])      
+     ```
    
    ```python
     python train.py --gradient_clip_val 1.0 \
