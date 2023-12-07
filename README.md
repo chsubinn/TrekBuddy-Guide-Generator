@@ -71,7 +71,7 @@
       #print best_checkpoint path
       best_checkpoint = checkpoint_callback.best_model_path
       print('\n best checkpoint path:', best_checkpoint)    
-     ```
+    ```
    - 학습하기
      ```python
       python train.py --gradient_clip_val 1.0 \
