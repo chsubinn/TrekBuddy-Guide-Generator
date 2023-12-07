@@ -29,8 +29,12 @@
 
 ## 설치방법 How to Build
 - Directory 구조
-<img width="500" height="600" src="https://github.com/chsubinn/TrekBuddy-Guide-Generator/assets/111068038/280821e7-6258-4488-a3bd-394ffcebff40">
+<img width="300" height="400" src="https://github.com/chsubinn/TrekBuddy-Guide-Generator/assets/111068038/280821e7-6258-4488-a3bd-394ffcebff40">
 
+- **Data folder**: train data, test data 넣기
+- **checkpoint folder**: model binary
+- **wandb**: Weights & Biases. 모델이 학습한 결과 저장 및 시각화, 하이퍼파라미터 저장, 시스템(GPU, CPU, memory 등) 모니터링
+- **SKT KoBart open source** 
 
 
 ## 사용방법 How to Test
