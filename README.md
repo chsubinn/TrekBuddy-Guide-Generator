@@ -20,7 +20,7 @@
 - **Database** : <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=white">
 
 ## 아키텍처
-<img width="1348" alt="아키텍처-기술" src="https://github.com/Yang-ga-hyeon/TrekBuddy/assets/111068038/3fe28e87-8341-44bc-86b0-77526c2b430d">
+<img width="1348" alt="아키텍처-기술" src="https://github.com/chsubinn/TrekBuddy-Guide-Generator/issues/1#issue-2030727892">
   
   *Selenium이 아닌 Scrapy로 변경
 
