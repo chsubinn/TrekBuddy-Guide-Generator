@@ -39,7 +39,23 @@
 
 ## 사용방법 How to Test
 1) 개발 환경 setting
-  - 
+  - GPU 사용
+  - SKT KoBart open source download
+  - 필요한 라이브러리 install
+
+2) Dataset 준비 & preprocess
+3) Train
+   ```python
+!python train.py --gradient_clip_val 1.0 \
+                --max_epochs 100 \
+                --checkpoint checkpoint \
+                --accelerator gpu \
+                --num_gpus 1 \
+                --batch_size 4 \
+                --num_workers 4
+```
+4) Evaluation
+5) Test
 
 ## Data Description
 -
