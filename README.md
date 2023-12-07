@@ -28,7 +28,7 @@
 ## 설치방법 How to Build
 - Directory 구조
 .
-├─data     //train&test data
+├─data     //train&test data <br/>
 │  │  train.tsv
 │  └─ test.tsv
 ├─checkpoint
