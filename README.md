@@ -81,7 +81,7 @@
                       --num_gpus 1 \
                       --batch_size 4 \
                       --num_workers 4
-    ```
+     ```
 
 **4) Evaluation**
 
