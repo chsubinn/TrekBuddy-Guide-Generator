@@ -38,7 +38,8 @@
 
 
 ## 사용방법 How to Test
-- GPU 환경에서 
+1) 개발 환경 setting
+- 
 
 ## Data Description
 -
