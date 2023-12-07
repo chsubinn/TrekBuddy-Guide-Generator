@@ -44,10 +44,14 @@
   - 필요한 라이브러리 install
 
 **2) Dataset 준비 & preprocess**
-  - (수빈이가 쓰시오)
+  - training data (his-cul, public 등)을 고르고 해당 데이터를 csv 파일로 형식 변환, 실행 전 ROOT 경로 및 csv 파일명 지정 필수 
+     ```python
+       python preprocess/json2csv.py
+     ```
+
   - csv 파일을 tsv 파일로 형식 변환
      ```python
-       python csvTotsv.py
+       python preprocess/csvTotsv.py
      ```
 **3) Train(finetuning)**
   - dataset.py에서 input_ids와 label_ids를 본인의 데이터셋에 맞게 변경
@@ -84,7 +88,10 @@
      ```
 
 **4) Evaluation**
-
+  - output과 사람이 직접 요약한 문장을 비교하여 rouge score로 평가
+     ```python
+       python rouge.py
+     ```
 **5) Test**
   - 학습한 model binary 추출
     ```python
@@ -120,11 +127,11 @@
     
 
 ## Data Description
--
+- 
 
 
 ## Open Source
--
+- 
 
 
 
