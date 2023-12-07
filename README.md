@@ -27,23 +27,8 @@
 
 ## 설치방법 How to Build
 - Directory 구조
-.
-└── Edit me to generate/
-    ├── a/
-    │   └── nice/
-    │       └── tree/
-    │           ├── diagram!
-    │           └── :)
-    └── Use indentation/
-        ├── to indicate/
-        │   ├── file
-        │   ├── and
-        │   ├── folder
-        │   └── nesting.
-        └── You can even/
-            └── use/
-                ├── markdown
-                └── bullets!
+<img width="100" height="200" src="https://github.com/Yang-ga-hyeon/TrekBuddy/assets/111068038/f4264824-e151-4a5b-94ea-c257113cf0b8">
+
 
 
 ## 사용방법 How to Test
