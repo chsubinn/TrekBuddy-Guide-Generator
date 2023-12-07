@@ -20,16 +20,16 @@
 - **Database** : <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=white">
 
 ## 아키텍처
-<img width="1017" alt="아키텍처" src="https://github.com/Yang-ga-hyeon/TrekBuddy/assets/111068038/2f32b512-d40b-4d81-9c86-66f3da123b4d"> <br/>
+<img width="500" alt="아키텍처" src="https://github.com/Yang-ga-hyeon/TrekBuddy/assets/111068038/2f32b512-d40b-4d81-9c86-66f3da123b4d"> <br/>
 
-<img width="1348" alt="아키텍처-기술" src="https://github.com/Yang-ga-hyeon/TrekBuddy/assets/111068038/3fe28e87-8341-44bc-86b0-77526c2b430d">
+<img width="500" alt="아키텍처-기술" src="https://github.com/Yang-ga-hyeon/TrekBuddy/assets/111068038/3fe28e87-8341-44bc-86b0-77526c2b430d">
   
   *Selenium이 아닌 Scrapy로 변경
 
 
 ## 설치방법 How to Build
 - Directory 구조
-<img width="100" height="200" src="https://github.com/chsubinn/TrekBuddy-Guide-Generator/assets/111068038/280821e7-6258-4488-a3bd-394ffcebff40">
+<img width="500" height="600" src="https://github.com/chsubinn/TrekBuddy-Guide-Generator/assets/111068038/280821e7-6258-4488-a3bd-394ffcebff40">
 
 
 
