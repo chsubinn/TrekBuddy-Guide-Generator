@@ -88,7 +88,7 @@
 **5) Test**
   - 학습한 model binary 추출
     ```python
-       python get_model_binary.py --model_binary '/content/drive/MyDrive/KoBART-summarization-main/KoBART-summarization-main/checkpoint/summarization_final/best_accuracy.ckpt'
+       python get_model_binary.py --model_binary '추출할 checkpoint 경로를 입력하세요'
     ```
   - 학습한 model load하여 사용
     ```python
@@ -97,16 +97,14 @@
         from transformers.models.bart import BartForConditionalGeneration
         
         # 모델 바이너리 파일 경로
-        model_binary_path = '/content/drive/MyDrive/KoBART-summarization-main/KoBART-summarization-main/kobart_summary'
+        model_binary_path = 'model binary 경로를 입력하세요'
         
         # KoBART 모델 및 토크나이저 로드
         tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-base-v1')
         model = BartForConditionalGeneration.from_pretrained(model_binary_path)
 
         # 입력 텍스트
-        input_text =  """
-         광화문(光化門)은 서울특별시 종로구의 조선왕조 법궁인 경복궁의 남쪽에 있는 정문이다. "임금의 큰 덕(德)이 온 나라를 비춘다"는 의미이다. 1395년에 세워졌으며, 2층 누각 구조로 되어 있다. 경복궁의 정전인 근정전으로 가기 위해 지나야 하는 문 3개 중에서 첫째로 마주하는 문이며, 둘째는 흥례문, 셋째는 근정문이다. 광화문 앞에는 지금은 도로 건설로 사라진 월대가 자리잡고 있었으며, 양쪽에는 한 쌍의 해태 조각상이 자리잡고 있다. 광화문의 석축부에는 세 개의 홍예문(虹霓門, 아치문)이 있다. 가운데 문은 임금이 다니던 문이고, 나머지 좌우의 문은 신하들이 다니던 문이었는데, 왼쪽 문은 무신이, 오른쪽 문은 문신이 출입했다. 광화문의 가운데 문 천장에는 주작이 그려져 있고, 왼쪽 문에는 거북이가, 오른쪽 문에는 천마가 그려져 있다.
-        """
+        input_text =  "요약할 텍스트를 입력하세요"
         # 입력 텍스트를 토큰화하여 인코딩
         input_ids = tokenizer.encode(input_text, return_tensors="pt", max_length=1024, truncation=True)
         
