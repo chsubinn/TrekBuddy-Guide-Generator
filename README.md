@@ -39,7 +39,7 @@
 
 ## 사용방법 How to Test
 1) 개발 환경 setting
-- 
+  - 
 
 ## Data Description
 -
