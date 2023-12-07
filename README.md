@@ -44,9 +44,16 @@
   - 필요한 라이브러리 install
 
 2) Dataset 준비 & preprocess
-3) Train
+   -(수빈이가 쓰시오)
+   - csv 파일을 tsv 파일로 형식 변환
+     ```python
+       python csvTotsv.py
+     ```
+4) Train(finetuning)
+  -
+   
    ```python
-    !python train.py --gradient_clip_val 1.0 \
+    python train.py --gradient_clip_val 1.0 \
                     --max_epochs 100 \
                     --checkpoint checkpoint \
                     --accelerator gpu \
