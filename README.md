@@ -46,12 +46,12 @@
 **2) Dataset 준비 & preprocess**
   - training data (his-cul, public 등)을 고르고 해당 데이터를 csv 파일로 형식 변환, 실행 전 ROOT 경로 및 csv 파일명 지정 필수 
      ```python
-       python preprocess/json2csv.py
+       python json2csv.py
      ```
 
   - csv 파일을 tsv 파일로 형식 변환
      ```python
-       python preprocess/csvTotsv.py
+       python csvTotsv.py
      ```
 **3) Train(finetuning)**
   - dataset.py에서 input_ids와 label_ids를 본인의 데이터셋에 맞게 변경
