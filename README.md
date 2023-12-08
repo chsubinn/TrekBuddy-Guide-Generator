@@ -92,6 +92,15 @@
      ```python
        python rouge.py
      ```
+ - 학습한 모델로 측정한 결과
+
+    |         |rouge-1|rouge-2|rouge-l|
+    |---------|-------|-------|-------|
+    |Precision|0.61702|0.42857|0.61702|
+    |Recal    |0.58   |0.38182|0.58   |
+    |F1       |0.59794|0.40385|0.59794|
+    
+     
 **5) Test**
   - 학습한 model binary 추출
     ```python
@@ -127,11 +136,29 @@
     
 
 ## Data Description
-- 
-
-
-## Open Source
-- 
-
-
+-  AI hub 요약문 및 레포트 생성 데이터 사용
+   (https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=97)
+- Data Set 구조
+  ```bash
+  ├── Meta(Acqusition)
+  │   ├── doc_id
+  │   ├── doc_category
+  │   ├── doc_type
+  │   ├── doc_name
+  │   ├── author
+  │   ├── publisher
+  │   ├── publisher_year
+  │   └── doc_origin
+  ├── Meta(Refine)
+  │   ├── passage_id
+  │   ├── passage // 원문
+  │   └── passage_Cnt // 원문 글자 수
+  └── Annotation
+      ├── summary1 // 추출 요약
+      ├── summary2
+      ├── summary3
+      └── summary_3_cnt // 생성 요약
+  ``` 
+- json2csv.py에서는 passage와 summary1, 2, 3를 모은 추출 요약 데이터를 모아 (passage, summary) 쌍으로 만들고 이를 csv로 변환합니다.
+- csvTotsv.py에서는 json2csv.py파일에서 변환한 csv를 tsv로 변환하여 요약 모델의 데이터로 입력합니다.
 
